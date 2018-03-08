@@ -584,10 +584,10 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     [items addObject:originalButtonTitle];
     [items addObject:squareButtonTitle];
     if (verticalCropBox) {
-        [items addObjectsFromArray:@[@"2:3", @"3:5", @"3:4", @"4:5", @"5:7", @"9:16"]];
+        [items addObjectsFromArray:@[@"2:3", @"3:4", @"5:7"]];
     }
     else {
-        [items addObjectsFromArray:@[@"3:2", @"5:3", @"4:3", @"5:4", @"7:5", @"16:9"]];
+        [items addObjectsFromArray:@[@"3:2",@"4:3", @"7:5"]];
     }
     
     //Present via a UIAlertController if >= iOS 8
