@@ -581,7 +581,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     
     //Prepare the list that will be fed to the alert view/controller
     NSMutableArray *items = [NSMutableArray array];
-    [items addObject:originalButtonTitle];
+//    [items addObject:originalButtonTitle];
     [items addObject:squareButtonTitle];
     if (verticalCropBox) {
         [items addObjectsFromArray:@[@"2:3", @"3:4", @"5:7"]];
