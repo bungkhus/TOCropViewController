@@ -581,7 +581,6 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     
     //Prepare the list that will be fed to the alert view/controller
     NSMutableArray *items = [NSMutableArray array];
-//    [items addObject:originalButtonTitle];
     [items addObject:squareButtonTitle];
     if (verticalCropBox) {
         [items addObjectsFromArray:@[@"2:3", @"3:4", @"5:7"]];
@@ -655,16 +654,16 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     
     switch (aspectRatioPreset) {
         case TOCropViewControllerAspectRatioPresetOriginal:
-            aspectRatio = CGSizeZero;
-            break;
-        case TOCropViewControllerAspectRatioPresetSquare:
             aspectRatio = CGSizeMake(1.0f, 1.0f);
             break;
-        case TOCropViewControllerAspectRatioPreset3x2:
+        case TOCropViewControllerAspectRatioPresetSquare:
             aspectRatio = CGSizeMake(3.0f, 2.0f);
             break;
+        case TOCropViewControllerAspectRatioPreset3x2:
+            aspectRatio = CGSizeMake(4.0f, 3.0f);
+            break;
         case TOCropViewControllerAspectRatioPreset5x3:
-            aspectRatio = CGSizeMake(5.0f, 3.0f);
+            aspectRatio = CGSizeMake(7.0f, 5.0f);ß
             break;
         case TOCropViewControllerAspectRatioPreset4x3:
             aspectRatio = CGSizeMake(4.0f, 3.0f);
